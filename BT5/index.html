@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .input {
+    display: flex;
+}
+.name, .position{
+    border: 1px solid gray;
+    padding: 10px;
+}
+form, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 100%;
+}
+th {
+    background-color: lightgray;
+    padding: 5px 10px;
+}
+</style>
+<body>
+<div class="display">
+  <form action="#" method="post">
+    <h1>Danh sách nhân viên Rikkei</h1>
+    <div class = "input">
+      <div class="name">
+        <label for="name">Tên nhân viên</label>
+        <input type="text" id="name">
+      </div>
+      <div class="position">
+        <label for="position">Chức vụ</label>
+        <input type="text" id="position">
+      </div>
+    </div>
+    <button class="add" type="submit" id="addEmp">Thêm nhân viên</button>
+  </form>
+  <table>
+    <thead>
+    <tr>
+      <th>STT</th>
+      <th>Tên</th>
+      <th>Chức vụ</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

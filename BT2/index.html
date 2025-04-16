@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Task Management</h2>
+  <form id="task-form">
+    <input type="text" id="content" placeholder="Content" required />
+    <input type="date" id="dueDate" required />
+    <select id="status">
+        <option value="">Choose Status</option>
+      <option value="Pending">Pending</option>
+      <option value="Completed">Completed</option>
+    </select>
+    <input type="text" id="assignedTo" placeholder="Username" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Content</th>
+        <th>Due date</th>
+        <th>Status</th>
+        <th>Assigned to</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="task-list">
+
+    </tbody>
+  </table>
+
+  <script src="./main.js"></script>
+</body>
+</html>
+

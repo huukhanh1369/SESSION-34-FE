@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  h2{
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  input, select, button {
+    padding: 8px;
+    border-radius: 5px;
+  }
+  input{
+    width: 300px;
+  }
+  #task-form button{
+    background-color: rgb(0, 132, 255);
+    color: #ffffff;
+    outline: none;
+    border: none;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  button.edit, button.delete {
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+  
